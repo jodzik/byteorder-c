@@ -23,11 +23,11 @@ static inline void u32_to_le(uint8_t* buf, uint32_t val) {
     sys_put_le32(val, buf);
 }
 
-static inline uint32_t u64_from_le(uint8_t const* buf) {
+static inline uint64_t u64_from_le(uint8_t const* buf) {
     return sys_get_le64(buf);
 }
 
-static inline void u64_to_le(uint8_t* buf, uint32_t val) {
+static inline void u64_to_le(uint8_t* buf, uint64_t val) {
     sys_put_le64(val, buf);
 }
 
